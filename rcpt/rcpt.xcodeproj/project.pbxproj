@@ -13,6 +13,7 @@
 		CA24F4631CA23B980027FAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA24F4621CA23B980027FAEC /* Assets.xcassets */; };
 		CA24F4661CA23B980027FAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA24F4641CA23B980027FAEC /* LaunchScreen.storyboard */; };
 		CA24F4711CA23B980027FAEC /* rcptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F4701CA23B980027FAEC /* rcptTests.swift */; };
+		CA510E931CA2567100B858C8 /* ReceiptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA510E921CA2567100B858C8 /* ReceiptTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CA24F46C1CA23B980027FAEC /* rcptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rcptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA24F4701CA23B980027FAEC /* rcptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rcptTests.swift; sourceTree = "<group>"; };
 		CA24F4721CA23B980027FAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA510E921CA2567100B858C8 /* ReceiptTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				CA24F45B1CA23B980027FAEC /* AppDelegate.swift */,
 				CA24F45D1CA23B980027FAEC /* ViewController.swift */,
 				CA24F45F1CA23B980027FAEC /* Main.storyboard */,
+				CA510E921CA2567100B858C8 /* ReceiptTableViewCell.swift */,
 				CA24F4621CA23B980027FAEC /* Assets.xcassets */,
 				CA24F4641CA23B980027FAEC /* LaunchScreen.storyboard */,
 				CA24F4671CA23B980027FAEC /* Info.plist */,
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA510E931CA2567100B858C8 /* ReceiptTableViewCell.swift in Sources */,
 				CA24F45E1CA23B980027FAEC /* ViewController.swift in Sources */,
 				CA24F45C1CA23B980027FAEC /* AppDelegate.swift in Sources */,
 			);
@@ -329,6 +333,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.getsolusi.rcpt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -341,6 +346,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.getsolusi.rcpt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -387,6 +393,7 @@
 				CA24F4771CA23B980027FAEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA24F4781CA23B980027FAEC /* Build configuration list for PBXNativeTarget "rcptTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +402,7 @@
 				CA24F47A1CA23B980027FAEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
