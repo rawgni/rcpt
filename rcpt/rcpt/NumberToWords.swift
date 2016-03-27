@@ -175,11 +175,3 @@ private func ThreeDigitGroupToWords(threeDigits: Int) -> String {
     return groupText
 }
 
-
-
-NumberToWords(111111111, language: "id")
-NumberToWords(111111111, language: "en")
-
-print(Int.max)
-print(UInt.max)
-

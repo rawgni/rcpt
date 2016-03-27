@@ -7,22 +7,29 @@
 //
 
 import UIKit
+import RealmSwift
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITextFieldDelegate {
+    
+    // MARK: Properties
+    @IBOutlet weak var titleField: UITextField!
+    @IBOutlet weak var notesField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        print("hellow world")
-        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func saveReceipt(sender: UIButton) {
+        let receipt = Receipt()
+        receipt.name = titleField.text!
+        receipt.notes = notesField.text!
+        
+        try! uiRealm.write({ () -> Void in
+            uiRealm.add(receipt)
+        })
+        
+        self.navigationController?.popViewControllerAnimated(true)
     }
-
-
 }
 
