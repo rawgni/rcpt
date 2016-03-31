@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CA2029E61CA66E3D00A030F2 /* NumberToWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2029E51CA66E3D00A030F2 /* NumberToWords.swift */; };
 		CA24F45C1CA23B980027FAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F45B1CA23B980027FAEC /* AppDelegate.swift */; };
-		CA24F45E1CA23B980027FAEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F45D1CA23B980027FAEC /* ViewController.swift */; };
+		CA24F45E1CA23B980027FAEC /* AddReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F45D1CA23B980027FAEC /* AddReceiptViewController.swift */; };
 		CA24F4611CA23B980027FAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA24F45F1CA23B980027FAEC /* Main.storyboard */; };
 		CA24F4631CA23B980027FAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA24F4621CA23B980027FAEC /* Assets.xcassets */; };
 		CA24F4661CA23B980027FAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA24F4641CA23B980027FAEC /* LaunchScreen.storyboard */; };
@@ -17,9 +17,8 @@
 		CA4E94E81CA6608B004C6A70 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA4E94E51CA6608B004C6A70 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA4E94EA1CA6608B004C6A70 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA4E94E61CA6608B004C6A70 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA6618361CA67103001A5F25 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6618351CA67103001A5F25 /* Receipt.swift */; };
-		CA66183C1CA6A924001A5F25 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66183B1CA6A924001A5F25 /* ReceiptViewController.swift */; };
-		CA66183E1CA6A97F001A5F25 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66183D1CA6A97F001A5F25 /* SampleData.swift */; };
-		CA6618401CA6AE21001A5F25 /* ReceiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66183F1CA6AE21001A5F25 /* ReceiptCell.swift */; };
+		CA66183C1CA6A924001A5F25 /* ReceiptListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66183B1CA6A924001A5F25 /* ReceiptListViewController.swift */; };
+		CA6AB92A1CAD3C7800C9556A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AB9291CAD3C7800C9556A /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +50,7 @@
 		CA2029E51CA66E3D00A030F2 /* NumberToWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberToWords.swift; sourceTree = "<group>"; };
 		CA24F4581CA23B980027FAEC /* rcpt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rcpt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA24F45B1CA23B980027FAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA24F45D1CA23B980027FAEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA24F45D1CA23B980027FAEC /* AddReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReceiptViewController.swift; sourceTree = "<group>"; };
 		CA24F4601CA23B980027FAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA24F4621CA23B980027FAEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA24F4651CA23B980027FAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,9 +61,8 @@
 		CA4E94E51CA6608B004C6A70 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		CA4E94E61CA6608B004C6A70 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		CA6618351CA67103001A5F25 /* Receipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Receipt.swift; path = Model/Receipt.swift; sourceTree = "<group>"; };
-		CA66183B1CA6A924001A5F25 /* ReceiptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
-		CA66183D1CA6A97F001A5F25 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
-		CA66183F1CA6AE21001A5F25 /* ReceiptCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptCell.swift; sourceTree = "<group>"; };
+		CA66183B1CA6A924001A5F25 /* ReceiptListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptListViewController.swift; sourceTree = "<group>"; };
+		CA6AB9291CAD3C7800C9556A /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +113,9 @@
 				CA24F4671CA23B980027FAEC /* Info.plist */,
 				CA24F4641CA23B980027FAEC /* LaunchScreen.storyboard */,
 				CA24F45F1CA23B980027FAEC /* Main.storyboard */,
-				CA66183F1CA6AE21001A5F25 /* ReceiptCell.swift */,
-				CA66183D1CA6A97F001A5F25 /* SampleData.swift */,
-				CA24F45D1CA23B980027FAEC /* ViewController.swift */,
-				CA66183B1CA6A924001A5F25 /* ReceiptViewController.swift */,
+				CA6AB9291CAD3C7800C9556A /* DatePickerViewController.swift */,
+				CA24F45D1CA23B980027FAEC /* AddReceiptViewController.swift */,
+				CA66183B1CA6A924001A5F25 /* ReceiptListViewController.swift */,
 			);
 			path = rcpt;
 			sourceTree = "<group>";
@@ -247,6 +244,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/JVFloatLabeledText.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -263,11 +261,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA6618361CA67103001A5F25 /* Receipt.swift in Sources */,
-				CA66183E1CA6A97F001A5F25 /* SampleData.swift in Sources */,
 				CA2029E61CA66E3D00A030F2 /* NumberToWords.swift in Sources */,
-				CA66183C1CA6A924001A5F25 /* ReceiptViewController.swift in Sources */,
-				CA24F45E1CA23B980027FAEC /* ViewController.swift in Sources */,
-				CA6618401CA6AE21001A5F25 /* ReceiptCell.swift in Sources */,
+				CA66183C1CA6A924001A5F25 /* ReceiptListViewController.swift in Sources */,
+				CA6AB92A1CAD3C7800C9556A /* DatePickerViewController.swift in Sources */,
+				CA24F45E1CA23B980027FAEC /* AddReceiptViewController.swift in Sources */,
 				CA24F45C1CA23B980027FAEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
