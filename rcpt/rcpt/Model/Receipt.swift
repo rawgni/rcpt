@@ -11,10 +11,16 @@ import RealmSwift
 
 class Receipt: Object {
     
-    dynamic var name = ""
-    dynamic var createdAt = NSDate()
-    dynamic var notes = ""
-    dynamic var isCompleted = false
+    dynamic var number = 0
+    dynamic var from = ""
+    dynamic var to = ""
+    dynamic var when = NSDate()
+    dynamic var type = ""
+    dynamic var amount: Double = 0.0
+    dynamic var desc = ""
+    dynamic var picture = ""
+    dynamic var signature = ""
+    dynamic var location = ""
     
     // Specify properties to ignore (Realm won't persist these)
     
@@ -22,14 +28,3 @@ class Receipt: Object {
         return []
     }
 }
-/*
- struct Receipt {
-    var name: String?
-    var notes: String?
-    
-    init(name: String?, notes: String?) {
-        self.name = name
-        self.notes = notes
-    }
-}
-*/

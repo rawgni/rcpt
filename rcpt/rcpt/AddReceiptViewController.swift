@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import RealmSwift
 
 protocol AddReceiptViewControllerDelegate: class {
     func addReceiptViewControllerDidCancel(controller: AddReceiptViewController)
@@ -15,28 +14,29 @@ protocol AddReceiptViewControllerDelegate: class {
                                   didFinishAddingItem item: Receipt)
 }
 
-class AddReceiptViewController: UITableViewController, UITextFieldDelegate {
+class AddReceiptViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Properties
     @IBOutlet weak var dateField: UITextField!
-    @IBOutlet weak var receivedFromField: UITextField!
+    @IBOutlet weak var numberField: UITextField!
+    @IBOutlet weak var fromField: UITextField!
     @IBOutlet weak var amountField: UITextField!
+    @IBOutlet weak var descField: UITextField!
     
-    @IBOutlet var receiptTableView: UITableView!
-    @IBOutlet weak var doneBarButton: UIBarButtonItem!
     
     weak var delegate: AddReceiptViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //dateField.becomeFirstResponder()
-        self.receiptTableView.tableFooterView = UIView()
-
-    }
-    
-    override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
-        return nil
+        let dateFormatter = NSDateFormatter()
+        
+        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        
+        print(NSDate())
+        dateField.text = dateFormatter.stringFromDate(NSDate())
+        print(dateField.text)
+        //numberField.becomeFirstResponder()
     }
 
     func textField(textField: UITextField,
@@ -44,8 +44,6 @@ class AddReceiptViewController: UITableViewController, UITextFieldDelegate {
                     replacementString string: String) -> Bool {
         let oldText: NSString = textField.text!
         let newText: NSString = oldText.stringByReplacingCharactersInRange(range, withString: string)
-        
-        doneBarButton.enabled = (newText.length > 0)
         
         print("length: \(newText.length)")
         return true
@@ -58,18 +56,41 @@ class AddReceiptViewController: UITableViewController, UITextFieldDelegate {
     
     @IBAction func done() {
         let receipt = Receipt()
-        receipt.name = receivedFromField.text!
-        receipt.notes = amountField.text!
         
-        /*
-        try! uiRealm.write({ () -> Void in
-            uiRealm.add(receipt)
-        }) */
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        print("HELLO")
+        print(dateField.text!)
+        
+        receipt.when = dateFormatter.dateFromString(dateField.text!)!
+        receipt.from = fromField.text!
+        receipt.desc = descField.text!
+        receipt.amount = Double(amountField.text!)!
         
         delegate?.addReceiptViewController(self, didFinishAddingItem: receipt)
     }
     
-    @IBAction func datePickerTapped(sender: AnyObject) {
+    @IBAction func dateEditing(sender: UITextField) {
+        let datePickerView:UIDatePicker = UIDatePicker()
+        
+        datePickerView.datePickerMode = UIDatePickerMode.Date
+        
+        sender.inputView = datePickerView
+        
+        datePickerView.addTarget(self, action: #selector(AddReceiptViewController.datePickerValueChanged), forControlEvents: UIControlEvents.ValueChanged)
+        
+    }
+    // 7
+    func datePickerValueChanged(sender:UIDatePicker) {
+        
+        let dateFormatter = NSDateFormatter()
+        
+        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        
+        dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+        
+        dateField.text = dateFormatter.stringFromDate(sender.date)
+        
     }
 }
 

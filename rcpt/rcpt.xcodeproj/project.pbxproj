@@ -14,6 +14,7 @@
 		CA24F4631CA23B980027FAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA24F4621CA23B980027FAEC /* Assets.xcassets */; };
 		CA24F4661CA23B980027FAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA24F4641CA23B980027FAEC /* LaunchScreen.storyboard */; };
 		CA24F4711CA23B980027FAEC /* rcptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F4701CA23B980027FAEC /* rcptTests.swift */; };
+		CA44F7FA1CBAA547003F4070 /* ReceiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA44F7F91CBAA547003F4070 /* ReceiptCell.swift */; };
 		CA4E94E81CA6608B004C6A70 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA4E94E51CA6608B004C6A70 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA4E94EA1CA6608B004C6A70 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA4E94E61CA6608B004C6A70 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA6618361CA67103001A5F25 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6618351CA67103001A5F25 /* Receipt.swift */; };
@@ -58,6 +59,7 @@
 		CA24F46C1CA23B980027FAEC /* rcptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rcptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA24F4701CA23B980027FAEC /* rcptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rcptTests.swift; sourceTree = "<group>"; };
 		CA24F4721CA23B980027FAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA44F7F91CBAA547003F4070 /* ReceiptCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptCell.swift; sourceTree = "<group>"; };
 		CA4E94E51CA6608B004C6A70 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		CA4E94E61CA6608B004C6A70 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		CA6618351CA67103001A5F25 /* Receipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Receipt.swift; path = Model/Receipt.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				CA24F4621CA23B980027FAEC /* Assets.xcassets */,
 				CA24F4671CA23B980027FAEC /* Info.plist */,
 				CA24F4641CA23B980027FAEC /* LaunchScreen.storyboard */,
+				CA44F7F91CBAA547003F4070 /* ReceiptCell.swift */,
 				CA24F45F1CA23B980027FAEC /* Main.storyboard */,
 				CA6AB9291CAD3C7800C9556A /* DatePickerViewController.swift */,
 				CA24F45D1CA23B980027FAEC /* AddReceiptViewController.swift */,
@@ -244,7 +247,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/JVFloatLabeledText.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -265,6 +267,7 @@
 				CA66183C1CA6A924001A5F25 /* ReceiptListViewController.swift in Sources */,
 				CA6AB92A1CAD3C7800C9556A /* DatePickerViewController.swift in Sources */,
 				CA24F45E1CA23B980027FAEC /* AddReceiptViewController.swift in Sources */,
+				CA44F7FA1CBAA547003F4070 /* ReceiptCell.swift in Sources */,
 				CA24F45C1CA23B980027FAEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
