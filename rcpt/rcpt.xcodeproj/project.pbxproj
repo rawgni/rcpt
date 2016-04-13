@@ -108,6 +108,7 @@
 		CA24F45A1CA23B980027FAEC /* rcpt */ = {
 			isa = PBXGroup;
 			children = (
+				FFE140071CBE720200699276 /* Assets */,
 				CA6618301CA67056001A5F25 /* Model */,
 				CA2029E51CA66E3D00A030F2 /* NumberToWords.swift */,
 				CA24F45B1CA23B980027FAEC /* AppDelegate.swift */,
@@ -138,6 +139,13 @@
 				CA6618351CA67103001A5F25 /* Receipt.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		FFE140071CBE720200699276 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -24,6 +24,19 @@ class ReceiptListViewController: UITableViewController, AddReceiptViewController
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         self.receiptListTableView.tableFooterView = UIView()
+        
+
+    
+        
+        // This sets the UINavigationController's navigationBar to green.
+        self.navigationController!.navigationBar.barTintColor = UIColor(red: 33/255, green: 150/255, blue: 243/255, alpha: 1.0)
+
+        // This changes the title text color to white.
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        // This sets the status bar to white (black infers there is a dark background, and we need white text)
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
+
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -63,11 +76,11 @@ class ReceiptListViewController: UITableViewController, AddReceiptViewController
         return 50.0
     }
  */
-    
+
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 50.0
+        return 72.0
     }
-    
+
     /*
     override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
