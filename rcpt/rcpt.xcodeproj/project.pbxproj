@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1131C9E0051883C56A5C7865 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F848B0ED1445E5DE74A0A62D /* Pods.framework */; };
 		CA2029E61CA66E3D00A030F2 /* NumberToWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2029E51CA66E3D00A030F2 /* NumberToWords.swift */; };
 		CA24F45C1CA23B980027FAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F45B1CA23B980027FAEC /* AppDelegate.swift */; };
 		CA24F45E1CA23B980027FAEC /* AddReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F45D1CA23B980027FAEC /* AddReceiptViewController.swift */; };
@@ -20,6 +21,7 @@
 		CA6618361CA67103001A5F25 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6618351CA67103001A5F25 /* Receipt.swift */; };
 		CA66183C1CA6A924001A5F25 /* ReceiptListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66183B1CA6A924001A5F25 /* ReceiptListViewController.swift */; };
 		CA6AB92A1CAD3C7800C9556A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AB9291CAD3C7800C9556A /* DatePickerViewController.swift */; };
+		FF0EC7F41CD100A10020FC86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0EC7F31CD100A10020FC86 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		157B38E40F83727C335899ED /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CA2029E51CA66E3D00A030F2 /* NumberToWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberToWords.swift; sourceTree = "<group>"; };
 		CA24F4581CA23B980027FAEC /* rcpt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rcpt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA24F45B1CA23B980027FAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +68,9 @@
 		CA6618351CA67103001A5F25 /* Receipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Receipt.swift; path = Model/Receipt.swift; sourceTree = "<group>"; };
 		CA66183B1CA6A924001A5F25 /* ReceiptListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptListViewController.swift; sourceTree = "<group>"; };
 		CA6AB9291CAD3C7800C9556A /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		F848B0ED1445E5DE74A0A62D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE779845949A2EC88F0F677A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FF0EC7F31CD100A10020FC86 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1131C9E0051883C56A5C7865 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B63AB8C91441BD0F99CDA3F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F848B0ED1445E5DE74A0A62D /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B64882EAB9D211573963AF1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE779845949A2EC88F0F677A /* Pods.debug.xcconfig */,
+				157B38E40F83727C335899ED /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CA24F44F1CA23B980027FAEC = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +117,8 @@
 				CA24F4591CA23B980027FAEC /* Products */,
 				CA24F45A1CA23B980027FAEC /* rcpt */,
 				CA24F46F1CA23B980027FAEC /* rcptTests */,
+				B64882EAB9D211573963AF1B /* Pods */,
+				B63AB8C91441BD0F99CDA3F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +146,7 @@
 				CA6AB9291CAD3C7800C9556A /* DatePickerViewController.swift */,
 				CA24F45D1CA23B980027FAEC /* AddReceiptViewController.swift */,
 				CA66183B1CA6A924001A5F25 /* ReceiptListViewController.swift */,
+				FF0EC7F31CD100A10020FC86 /* ViewController.swift */,
 			);
 			path = rcpt;
 			sourceTree = "<group>";
@@ -155,11 +182,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA24F4751CA23B980027FAEC /* Build configuration list for PBXNativeTarget "rcpt" */;
 			buildPhases = (
+				B3C8D4D62C15BBF1842181AB /* Check Pods Manifest.lock */,
 				CA24F4541CA23B980027FAEC /* Sources */,
 				CA24F4551CA23B980027FAEC /* Frameworks */,
 				CA24F4561CA23B980027FAEC /* Resources */,
 				CA4E94EB1CA6608B004C6A70 /* Embed Frameworks */,
 				CA4E94EC1CA66AA6004C6A70 /* Run Script */,
+				D6A3C0B30118BCF65492A980 /* Embed Pods Frameworks */,
+				454B6E423770759B86A95C4B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,6 +277,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		454B6E423770759B86A95C4B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3C8D4D62C15BBF1842181AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		CA4E94EC1CA66AA6004C6A70 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +323,21 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
+		D6A3C0B30118BCF65492A980 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -276,6 +351,7 @@
 				CA6AB92A1CAD3C7800C9556A /* DatePickerViewController.swift in Sources */,
 				CA24F45E1CA23B980027FAEC /* AddReceiptViewController.swift in Sources */,
 				CA44F7FA1CBAA547003F4070 /* ReceiptCell.swift in Sources */,
+				FF0EC7F41CD100A10020FC86 /* ViewController.swift in Sources */,
 				CA24F45C1CA23B980027FAEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +477,7 @@
 		};
 		CA24F4761CA23B980027FAEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE779845949A2EC88F0F677A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -408,6 +485,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = rcpt/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -421,6 +499,7 @@
 		};
 		CA24F4771CA23B980027FAEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 157B38E40F83727C335899ED /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -428,6 +507,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = rcpt/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

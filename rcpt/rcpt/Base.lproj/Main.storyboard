@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--QuickReceipt-->
@@ -62,12 +63,19 @@
                         <barButtonItem key="leftBarButtonItem" image="gear icon" id="dMH-LD-Oxm">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Rac-O7-pMj">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <segue destination="1jq-Ka-ZTm" kind="modal" identifier="AddItem" id="WkJ-JA-VsR"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="search" id="Rac-O7-pMj">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="1jq-Ka-ZTm" kind="modal" identifier="AddItem" id="WkJ-JA-VsR"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Add" id="mUk-ba-5XL">
+                                <connections>
+                                    <segue destination="8xi-qO-Ozv" kind="modal" id="Uta-wK-PXr"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -173,6 +181,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vN9-Zc-Bed" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="403.73333333333335" y="-225.30666666666667"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GtD-tp-Ll6">
+            <objects>
+                <viewController id="8xi-qO-Ozv" customClass="ViewController" customModule="rcpt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KFX-mx-FV5"/>
+                        <viewControllerLayoutGuide type="bottom" id="JCs-Sw-EZI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sBy-mb-5yH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CN9-bg-BlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339.5" y="-950.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hGp-0Q-nJZ">
