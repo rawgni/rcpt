@@ -72,7 +72,7 @@
                             </barButtonItem>
                             <barButtonItem title="Add" id="mUk-ba-5XL">
                                 <connections>
-                                    <segue destination="8xi-qO-Ozv" kind="modal" id="Uta-wK-PXr"/>
+                                    <segue destination="olh-X8-wli" kind="modal" id="bbq-ae-eCa"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -85,6 +85,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xkw-N9-hjG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="907.5" y="-227.5"/>
+        </scene>
+        <!--Add Receipt-->
+        <scene sceneID="5m7-j1-E9e">
+            <objects>
+                <viewController id="woh-UV-XAA" customClass="NativeEventFormViewController" customModule="rcpt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lis-SJ-6rf"/>
+                        <viewControllerLayoutGuide type="bottom" id="CwD-FW-ZsB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hHm-E5-OkS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Receipt" id="zVj-1t-2Yb">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cip-Wt-Uau"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yWc-hY-3bP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781.5" y="-946.5"/>
         </scene>
         <!--Add Receipt-->
         <scene sceneID="br9-UW-QWi">
@@ -182,24 +203,6 @@
             </objects>
             <point key="canvasLocation" x="403.73333333333335" y="-225.30666666666667"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="GtD-tp-Ll6">
-            <objects>
-                <viewController id="8xi-qO-Ozv" customClass="ViewController" customModule="rcpt" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KFX-mx-FV5"/>
-                        <viewControllerLayoutGuide type="bottom" id="JCs-Sw-EZI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sBy-mb-5yH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CN9-bg-BlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1339.5" y="-950.5"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="hGp-0Q-nJZ">
             <objects>
@@ -219,6 +222,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="knr-AS-wYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1340" y="-229"/>
+        </scene>
+        <!--Native Event Navigation Controller-->
+        <scene sceneID="CEb-Jl-O1r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="olh-X8-wli" customClass="NativeEventNavigationController" customModule="rcpt" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VdK-JJ-5TT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="woh-UV-XAA" kind="relationship" relationship="rootViewController" id="iuN-Ir-EYa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPc-nv-cd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339.5" y="-946.5"/>
         </scene>
     </scenes>
     <resources>
