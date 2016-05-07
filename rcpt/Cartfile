@@ -1,1 +1,2 @@
-github "ra1028/Former"
+github "realm/realm-cocoa"
+github "xmartlabs/Eureka" ~> 1.5
