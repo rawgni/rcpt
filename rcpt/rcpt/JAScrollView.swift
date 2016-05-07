@@ -34,7 +34,7 @@ class JAScrollView : UIScrollView, UIScrollViewDelegate {
     func setup() {
         //guard let parent = superview else { return }
         
-        print ("frame.size.width: \(frame.size.width)")
+        //print ("frame.size.width: \(frame.size.width)")
         
         contentSize = CGSize(width: (frame.size.width * (CGFloat(numPages) + 2)), height: frame.size.height)
     
@@ -88,14 +88,14 @@ class JAScrollView : UIScrollView, UIScrollViewDelegate {
         let pageWidth = frame.size.width
         let page = floor((contentOffset.x - (pageWidth/2)) / pageWidth) + 1
         
-        print("scrollView \(page)")
+        //print("scrollView \(page)")
         
         //if contentOffset.x < 0 {
             loadScrollViewWithPage(Int(page-1))
             loadScrollViewWithPage(Int(page))
             loadScrollViewWithPage(Int(page+1))
         //}
-        print("\(contentOffset.x)")
+        //print("\(contentOffset.x)")
         
         //loadScrollViewWithPage(Int(page - 1))
         //loadScrollViewWithPage(Int(page))

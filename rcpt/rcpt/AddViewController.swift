@@ -122,9 +122,9 @@ class NativeEventFormViewController : FormViewController, CLLocationManagerDeleg
                 $0.title = "Location"
                 $0.value = CLLocation(latitude: -34.91, longitude: -56.1646)
             }
-                .onPresent { from, to in
-                    to.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Done, target: from, action: #selector(AddViewController.multipleSelectorDone(_:)))
-            }
+//                .onPresent { from, to in
+//                    to.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Done, target: from, action: #selector(AddViewController.multipleSelectorDone(_:)))
+//            }
         
             <<< ImageRow() {
                 $0.title = "Photo"
