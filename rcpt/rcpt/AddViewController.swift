@@ -25,13 +25,13 @@ class NativeEventFormViewController : FormViewController, CLLocationManagerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if (CLLocationManager.locationServicesEnabled()) {
+        //if (CLLocationManager.locationServicesEnabled()) {
             locationManager = CLLocationManager()
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.requestAlwaysAuthorization()
             locationManager.startUpdatingLocation()
-        }
+        //}
 
         initializeForm()
         
@@ -101,11 +101,15 @@ class NativeEventFormViewController : FormViewController, CLLocationManagerDeleg
                     $0.title = "Photo"
                 }
             
-                <<< LocationRow() {
+                <<< LocationRow("location") {
                     $0.title = "Location"
-                    //$0.value = CLLocation(latitude: -34.91, longitude: -56.1646)
-                    $0.value = CLLocation(latitude: self.location.coordinate.latitude, longitude: self.location.coordinate.longitude)
                 }
+            
+            <<< TextAreaRow("address") {
+                $0.title = "Address"
+                $0.disabled = true
+
+            }
             
             
             +++ Section()
@@ -136,9 +140,29 @@ class NativeEventFormViewController : FormViewController, CLLocationManagerDeleg
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        self.location = locations.last! as CLLocation
+        let location = locations.last! as CLLocation
+        
+        self.form.rowByTag("location")!.baseValue = location
+        
+        //var geocoder = CLGeocoder()
+        //var locationCLLocation = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        
+        CLGeocoder().reverseGeocodeLocation(location, completionHandler:
+            {(placemarks, error) in
+                if (error != nil) {print("reverse geodcode fail: \(error!.localizedDescription)")}
+                if placemarks!.count > 0 {
+                    let pm = placemarks![0] as CLPlacemark
+                    let addrlist =  pm.addressDictionary?["FormattedAddressLines"] as? [String]
+                    self.form.rowByTag("address")!.baseValue = addrlist?.joinWithSeparator(", ")
+                    self.form.rowByTag("address")?.updateCell()
+                }
+                
+        })
     }
-
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("\(error)")
+    }
     
 }
     
