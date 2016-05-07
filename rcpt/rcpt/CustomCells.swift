@@ -25,13 +25,15 @@
 import Foundation
 import UIKit
 import MapKit
-import Eureka
+//import Eureka
 
 //MARK: WeeklyDayCell
 
 public enum WeekDay {
     case Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 }
+
+/*
 
 public class WeekDayCell : Cell<Set<WeekDay>>, CellType {
     
@@ -654,5 +656,5 @@ public class ImageCheckCell<T: Equatable> : Cell<T>, CellType {
         row.deselect()
     }
     
-}
+}*/
 

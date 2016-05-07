@@ -20,6 +20,13 @@
 		CA6618361CA67103001A5F25 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6618351CA67103001A5F25 /* Receipt.swift */; };
 		CA66183C1CA6A924001A5F25 /* ReceiptListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66183B1CA6A924001A5F25 /* ReceiptListViewController.swift */; };
 		CA6AB92A1CAD3C7800C9556A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6AB9291CAD3C7800C9556A /* DatePickerViewController.swift */; };
+		CACC87311CDD964000BFC4C7 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC872C1CDD964000BFC4C7 /* AddViewController.swift */; };
+		CACC87321CDD964000BFC4C7 /* CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC872D1CDD964000BFC4C7 /* CustomCells.swift */; };
+		CACC87331CDD964000BFC4C7 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC872E1CDD964000BFC4C7 /* FloatLabelTextField.swift */; };
+		CACC87341CDD964000BFC4C7 /* ReceiptViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC872F1CDD964000BFC4C7 /* ReceiptViewControllerTableViewController.swift */; };
+		CACC87351CDD964000BFC4C7 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC87301CDD964000BFC4C7 /* SampleData.swift */; };
+		CACC87371CDD9BA000BFC4C7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC87361CDD9BA000BFC4C7 /* CalendarView.swift */; };
+		CACC87391CDD9BCB00BFC4C7 /* JAScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC87381CDD9BCB00BFC4C7 /* JAScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +72,13 @@
 		CA6618351CA67103001A5F25 /* Receipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Receipt.swift; path = Model/Receipt.swift; sourceTree = "<group>"; };
 		CA66183B1CA6A924001A5F25 /* ReceiptListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptListViewController.swift; sourceTree = "<group>"; };
 		CA6AB9291CAD3C7800C9556A /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		CACC872C1CDD964000BFC4C7 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		CACC872D1CDD964000BFC4C7 /* CustomCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCells.swift; sourceTree = "<group>"; };
+		CACC872E1CDD964000BFC4C7 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		CACC872F1CDD964000BFC4C7 /* ReceiptViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		CACC87301CDD964000BFC4C7 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		CACC87361CDD9BA000BFC4C7 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		CACC87381CDD9BCB00BFC4C7 /* JAScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,18 +122,25 @@
 		CA24F45A1CA23B980027FAEC /* rcpt */ = {
 			isa = PBXGroup;
 			children = (
-				FFE140071CBE720200699276 /* Assets */,
-				CA6618301CA67056001A5F25 /* Model */,
-				CA2029E51CA66E3D00A030F2 /* NumberToWords.swift */,
-				CA24F45B1CA23B980027FAEC /* AppDelegate.swift */,
-				CA24F4621CA23B980027FAEC /* Assets.xcassets */,
 				CA24F4671CA23B980027FAEC /* Info.plist */,
-				CA24F4641CA23B980027FAEC /* LaunchScreen.storyboard */,
-				CA44F7F91CBAA547003F4070 /* ReceiptCell.swift */,
-				CA24F45F1CA23B980027FAEC /* Main.storyboard */,
-				CA6AB9291CAD3C7800C9556A /* DatePickerViewController.swift */,
 				CA24F45D1CA23B980027FAEC /* AddReceiptViewController.swift */,
+				CACC872C1CDD964000BFC4C7 /* AddViewController.swift */,
+				CA24F45B1CA23B980027FAEC /* AppDelegate.swift */,
+				CACC87361CDD9BA000BFC4C7 /* CalendarView.swift */,
+				CACC872D1CDD964000BFC4C7 /* CustomCells.swift */,
+				CA6AB9291CAD3C7800C9556A /* DatePickerViewController.swift */,
+				CACC872E1CDD964000BFC4C7 /* FloatLabelTextField.swift */,
+				CACC87381CDD9BCB00BFC4C7 /* JAScrollView.swift */,
+				CA2029E51CA66E3D00A030F2 /* NumberToWords.swift */,
+				CA44F7F91CBAA547003F4070 /* ReceiptCell.swift */,
 				CA66183B1CA6A924001A5F25 /* ReceiptListViewController.swift */,
+				CACC872F1CDD964000BFC4C7 /* ReceiptViewControllerTableViewController.swift */,
+				CACC87301CDD964000BFC4C7 /* SampleData.swift */,
+				CA24F4621CA23B980027FAEC /* Assets.xcassets */,
+				FFE140071CBE720200699276 /* Assets */,
+				CA24F4641CA23B980027FAEC /* LaunchScreen.storyboard */,
+				CA24F45F1CA23B980027FAEC /* Main.storyboard */,
+				CA6618301CA67056001A5F25 /* Model */,
 			);
 			path = rcpt;
 			sourceTree = "<group>";
@@ -272,10 +293,17 @@
 			files = (
 				CA6618361CA67103001A5F25 /* Receipt.swift in Sources */,
 				CA2029E61CA66E3D00A030F2 /* NumberToWords.swift in Sources */,
+				CACC87311CDD964000BFC4C7 /* AddViewController.swift in Sources */,
+				CACC87331CDD964000BFC4C7 /* FloatLabelTextField.swift in Sources */,
+				CACC87341CDD964000BFC4C7 /* ReceiptViewControllerTableViewController.swift in Sources */,
 				CA66183C1CA6A924001A5F25 /* ReceiptListViewController.swift in Sources */,
+				CACC87371CDD9BA000BFC4C7 /* CalendarView.swift in Sources */,
 				CA6AB92A1CAD3C7800C9556A /* DatePickerViewController.swift in Sources */,
+				CACC87351CDD964000BFC4C7 /* SampleData.swift in Sources */,
 				CA24F45E1CA23B980027FAEC /* AddReceiptViewController.swift in Sources */,
 				CA44F7FA1CBAA547003F4070 /* ReceiptCell.swift in Sources */,
+				CACC87321CDD964000BFC4C7 /* CustomCells.swift in Sources */,
+				CACC87391CDD9BCB00BFC4C7 /* JAScrollView.swift in Sources */,
 				CA24F45C1CA23B980027FAEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

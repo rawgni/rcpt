@@ -6,19 +6,25 @@
 //  Copyright © 2016 gts. All rights reserved.
 //
 
-import Foundation
-import Eureka
-import CoreLocation
+
+import UIKit
+//import Eureka
+//import CoreLocation
 
 typealias Emoji = String
 let 💰 = "💰", 📄 = "📄", 📦 = "📦"
 
+/*
 class NativeEventNavigationController: UINavigationController, RowControllerType{
     var completionCallback: ((UIViewController) -> ())?
-}
+} */
 
-class NativeEventFormViewController : FormViewController, CLLocationManagerDelegate {
-    
+class NativeEventFormViewController : UIViewController {//FormViewController, CLLocationManagerDelegate {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
+/*
     var locationManager: CLLocationManager!
     var location: CLLocation!
     
@@ -114,7 +120,7 @@ class NativeEventFormViewController : FormViewController, CLLocationManagerDeleg
             
             +++ Section()
 
-/*
+
             +++ Section()
 
             <<< LocationRow() {
@@ -132,7 +138,7 @@ class NativeEventFormViewController : FormViewController, CLLocationManagerDeleg
         func multipleSelectorDone(item:UIBarButtonItem) {
             navigationController?.popViewControllerAnimated(true)
         }
- */
+ 
     }
     
     func cancelTapped(barButtonItem: UIBarButtonItem) {
@@ -180,3 +186,4 @@ class CurrencyFormatter : NSNumberFormatter, FormatterProtocol {
         return textInput.positionFromPosition(position, offset:((newValue?.characters.count ?? 0) - (oldValue?.characters.count ?? 0))) ?? position
     }
 }
+ */
