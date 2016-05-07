@@ -8,23 +8,18 @@
 
 
 import UIKit
-//import Eureka
-//import CoreLocation
+import Eureka
+import CoreLocation
 
 typealias Emoji = String
 let 💰 = "💰", 📄 = "📄", 📦 = "📦"
 
-/*
+
 class NativeEventNavigationController: UINavigationController, RowControllerType{
     var completionCallback: ((UIViewController) -> ())?
-} */
-
-class NativeEventFormViewController : UIViewController {//FormViewController, CLLocationManagerDelegate {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }
-/*
+
+class NativeEventFormViewController : FormViewController, CLLocationManagerDelegate {
     var locationManager: CLLocationManager!
     var location: CLLocation!
     
@@ -186,4 +181,3 @@ class CurrencyFormatter : NSNumberFormatter, FormatterProtocol {
         return textInput.positionFromPosition(position, offset:((newValue?.characters.count ?? 0) - (oldValue?.characters.count ?? 0))) ?? position
     }
 }
- */

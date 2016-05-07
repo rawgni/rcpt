@@ -27,6 +27,7 @@
 		CACC87351CDD964000BFC4C7 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC87301CDD964000BFC4C7 /* SampleData.swift */; };
 		CACC87371CDD9BA000BFC4C7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC87361CDD9BA000BFC4C7 /* CalendarView.swift */; };
 		CACC87391CDD9BCB00BFC4C7 /* JAScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC87381CDD9BCB00BFC4C7 /* JAScrollView.swift */; };
+		CACC873B1CDDCE6900BFC4C7 /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CACC873A1CDDCE6900BFC4C7 /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CACC873B1CDDCE6900BFC4C7 /* Eureka.framework in Embed Frameworks */,
 				CA4E94EA1CA6608B004C6A70 /* RealmSwift.framework in Embed Frameworks */,
 				CA4E94E81CA6608B004C6A70 /* Realm.framework in Embed Frameworks */,
 			);
@@ -79,6 +81,7 @@
 		CACC87301CDD964000BFC4C7 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		CACC87361CDD9BA000BFC4C7 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		CACC87381CDD9BCB00BFC4C7 /* JAScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAScrollView.swift; sourceTree = "<group>"; };
+		CACC873A1CDDCE6900BFC4C7 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 		CA24F44F1CA23B980027FAEC = {
 			isa = PBXGroup;
 			children = (
+				CACC873A1CDDCE6900BFC4C7 /* Eureka.framework */,
 				CA4E94E51CA6608B004C6A70 /* Realm.framework */,
 				CA4E94E61CA6608B004C6A70 /* RealmSwift.framework */,
 				CA24F4591CA23B980027FAEC /* Products */,

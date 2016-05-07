@@ -122,7 +122,9 @@ public class CalendarView: UIView {
             views.append(view)
         }
         
-       // let prev = self.viewWithTag(self.prevSelected) as? UIButton
+       let prev = self.viewWithTag(self.prevSelected) as? UIButton
+        
+        print("\(prev)")
        // prev!.backgroundColor = UIColor(red: 33/255, green: 150/255, blue: 243/255, alpha: 1.0)
        // prev!.setTitleColor(UIColor.redColor(), forState: UIControlState.Selected)
         
